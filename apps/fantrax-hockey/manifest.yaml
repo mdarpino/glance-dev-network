@@ -1,0 +1,45 @@
+gdn: 1
+id: fantrax-hockey
+version: 0.1.0
+name: Fantrax Hockey Matchups
+author: Mike D'Arpino
+description: Live fantasy hockey matchup scores from Fantrax.
+category: Sports
+entry: app.star
+
+width: 192
+height: 32
+
+refresh: 300
+
+assets:
+  - crossfit-preems.png
+  - darps.png
+  - ev.png
+  - fash.png
+  - godsplan.png
+  - greek.png
+  - hebrew-school-of-economics.png
+  - mikeverrelli11.png
+  - mills.png
+  - mr-wrench.png
+  - peter.png
+  - put-him-in-the-bathroom.png
+  - swatty.png
+  - will-you-be-my-neighbours.png
+
+inputs:
+  - key: apikey
+    type: string
+    app_input_type: api-key
+    label: Fantrax Ticker API Key
+    help: API key used to securely access your Fantrax hockey data.
+
+pages:
+  - matchup1
+  - matchup2
+  - matchup3
+  - matchup4
+  - matchup5
+  - matchup6
+  - matchup7

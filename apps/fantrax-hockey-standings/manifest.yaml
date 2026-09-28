@@ -1,0 +1,45 @@
+gdn: 1
+id: fantrax-hockey-standings
+version: 0.1.0
+name: Fantrax Hockey Standings
+author: Mike D'Arpino
+description: Live fantasy hockey standings from Fantrax.
+category: Sports
+entry: app.star
+
+width: 192
+height: 32
+
+refresh: 300
+
+assets:
+  - crossfit-preems.png
+  - darps.png
+  - ev.png
+  - fash.png
+  - godsplan.png
+  - greek.png
+  - hebrew-school-of-economics.png
+  - mikeverrelli11.png
+  - mills.png
+  - mr-wrench.png
+  - peter.png
+  - put-him-in-the-bathroom.png
+  - swatty.png
+  - will-you-be-my-neighbours.png
+
+inputs:
+  - key: apikey
+    type: string
+    app_input_type: api-key
+    label: Fantrax Ticker API Key
+    help: API key used to securely access your Fantrax hockey data.
+
+pages:
+  - standings1
+  - standings2
+  - standings3
+  - standings4
+  - standings5
+  - standings6
+  - standings7
