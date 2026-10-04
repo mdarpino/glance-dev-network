@@ -1,6 +1,6 @@
 gdn: 1
 id: fantrax-hockey-standings
-version: 0.1.0
+version: 0.2.0
 name: Fantrax Hockey Standings
 author: Mike D'Arpino
 description: Live fantasy hockey standings from Fantrax.
@@ -23,17 +23,23 @@ assets:
   - mikeverrelli11.png
   - mills.png
   - mr-wrench.png
+  - page-1.png
   - peter.png
   - put-him-in-the-bathroom.png
   - swatty.png
   - will-you-be-my-neighbours.png
 
 inputs:
+  - key: leagueid
+    type: string
+    app_input_type: free-text
+    label: Fantrax League ID
+    help: Your Fantrax league ID, found in the Fantrax league URL.
   - key: apikey
     type: string
     app_input_type: api-key
-    label: Fantrax Ticker API Key
-    help: API key used to securely access your Fantrax hockey data.
+    label: Fantrax GLANCE Token
+    help: Connect Fantrax at fantrax-public.mdarpino.workers.dev/connect and paste the token shown after login.
 
 pages:
   - standings1
@@ -43,3 +49,4 @@ pages:
   - standings5
   - standings6
   - standings7
+  - standings8
