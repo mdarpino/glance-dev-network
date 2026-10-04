@@ -11,7 +11,7 @@ This app reads private Fantrax league data through the Fantrax GLANCE connector.
 
 Keep the GLANCE token private. It is entered as an encrypted `api-key` input.
 
-The app refreshes every 300 seconds and supports up to 16 teams / 8 matchups.
+The app refreshes every 300 seconds and supports up to 14 teams / 7 pages.
 
 ## Privacy and security
 

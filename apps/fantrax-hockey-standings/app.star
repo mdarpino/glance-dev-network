@@ -41,6 +41,10 @@ def league_supported(data):
     if data == None:
         return True
 
+    team_count = data.get("team_count", 0) or 0
+    if team_count > 14:
+        return False
+
     supported = data.get("supported", {}) or {}
     value = supported.get("league_supported")
 
@@ -219,7 +223,7 @@ def draw_standings(c, ctx, start_index):
         return
 
     if not league_supported(data):
-        draw_message(c, "LEAGUE TOO LARGE", "MAX 16 TEAMS")
+        draw_message(c, "LEAGUE TOO LARGE", "MAX 14 TEAMS")
         return
 
     standings = get_standings(data)
@@ -285,5 +289,3 @@ def standings7(c, ctx):
     draw_standings(c, ctx, 12)
 
 
-def standings8(c, ctx):
-    draw_standings(c, ctx, 14)
